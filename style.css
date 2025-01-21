@@ -1,0 +1,21 @@
+body {
+    background: linear-gradient(to bottom, #57C1EB, #246FA8);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.search-bar {
+    max-width: 400px;
+    margin: 20px auto;
+}
+.weather-icon {
+    width: 100px;
+}
+.forecast-icon {
+    width: 50px;
+}
+.card-custom {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+}
