@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,59 +8,76 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Barre de recherche -->
-    <div class="container search-bar">
-        <form class="d-flex justify-content-between">
-            <input class="form-control rounded-pill me-2" type="search" placeholder="search...">
-            <button class="btn btn-light rounded-pill" type="submit">Search</button>
-        </form>
-    </div>
+    <header>
+            <form class="d-flex mt-3 bar-search justify-content-between w-100">
+                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" alt="">
+                <input class="search p-3 mt-5  border border-none rounded-pill" type="search" placeholder="enter city name....">
+            </form>
+    </header>
 
-    <!-- Section météo principale -->
-    <div class="container text-center mt-4">
-        <img src="weather-icon.png" class="weather-icon" alt="weather">
-        <h2>city-name</h2>
-        <h1>20 °C</h1>
-    </div>
+    <main class="container mt-5">
+        <!-- Section météo principale -->
+        <div class="meteo-principal text-center w-100">
+            <img src="weather-icon.png" id="weather-icon" alt="weather">
+            <h2 class="name-city">city-name</h2>
+            <h1 class="temp">20 °C</h1>
+        </div>
 
-    <!-- Détails météo -->
-    <div class="container mt-4">
-        <div class="row justify-content-center">
-            <div class="col-6 col-md-4 card-custom">
-                <img src="humidity-icon.png" class="mb-2" alt="humidity">
-                <h5>Humidité</h5>
-                <p>30%</p>
-            </div>
-            <div class="col-6 col-md-4 card-custom">
-                <img src="wind-icon.png" class="mb-2" alt="wind">
-                <h5>Vitesse du vent</h5>
-                <p>12 km/h</p>
+        <!-- Détails météo -->
+        <div class="meteo-detail">
+            <div class="row justify-content-center mt-5">
+                <div class="col-6 col-md-4 card-custom mt-5">
+                    <img src="images/humidite-icon.png" id="humidite-icon" class="mb-2" alt="humidity">
+                    <h5>Humidity</h5>
+                    <p class="humidity">30%</p>
+                </div>
+                <div class="col-6 col-md-4 card-custom mt-5">
+                    <img src="images/air-blow-icon-air-blow-simple-sign-air-blow-blowing-blustery-wind-windy-icon-air-icons-illustration-free-vector-removebg-preview.png"
+                        id="vent-icon" class="mb-2" alt="wind">
+                    <h5>Wind speed</h5>
+                    <p class="wind">12 km/h</p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- Prévisions météo -->
-    <div class="container mt-4">
-        <div class="row text-center">
-            <div class="col-4">
+
+    <div class="footer justify-content-around d-flex w-100 mt-5">
+            <div class="ietm mt-5 d-flex flex-column align-items-center">
                 <p>Aujourd'hui</p>
                 <img src="weather-icon.png" class="forecast-icon" alt="today">
                 <p>20 °C</p>
             </div>
-            <div class="col-4">
+            <div class="ietm mt-5 d-flex flex-column align-items-center">
                 <p>Demain</p>
                 <img src="weather-icon.png" class="forecast-icon" alt="tomorrow">
                 <p>20 °C</p>
             </div>
-            <div class="col-4">
+            <div class="ietm mt-5 d-flex flex-column align-items-center">
                 <p>Jeudi</p>
                 <img src="weather-icon.png" class="forecast-icon" alt="thursday">
                 <p>20 °C</p>
             </div>
-        </div>
+            <div class="ietm mt-5 d-flex flex-column align-items-center">
+                <p>Jeudi</p>
+                <img src="weather-icon.png" class="forecast-icon" alt="thursday">
+                <p>20 °C</p>
+            </div>
+            <div class="ietm mt-5 d-flex flex-column align-items-center">
+                <p>Jeudi</p>
+                <img src="weather-icon.png" class="forecast-icon" alt="thursday">
+                <p>20 °C</p>
+            </div>
+            
+        
     </div>
+    
 
 </body>
+
 </html>
