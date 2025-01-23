@@ -11,13 +11,15 @@ async function getWeather(city) {
     document.querySelector('.temp').innerHTML=Math.round(data.main.temp)+" °C";
     document.querySelector('.humidity').innerHTML=data.main.humidity+" %";
     document.querySelector('.wind').innerHTML=data.wind.speed+" km/h";
-
+    document.querySelector('.weather-icon').src=` https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     console.log(data);
+    
 
     // const forcastResponse = await fetch()
 }
  searchBtn.addEventListener('click', ()=>{
     getWeather(searchCity.value.trim() );
+    
  })
 
 
