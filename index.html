@@ -12,17 +12,18 @@
 <body>
 
     <!-- Barre de recherche -->
-    <header>
-            <form class="d-flex mt-3 bar-search justify-content-between w-100">
-                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" alt="">
-                <input class="search p-3 mt-5  border border-none rounded-pill" type="search" placeholder="enter city name....">
+    <header class=" d-flex justify-content-around">
+        <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" alt="">
+            <form class="d-flex  mt-5 bar-search w-50 gap-4">        
+                <input class="search p-3 border border-none rounded-pill" type="search" placeholder="enter city name....">
+                <button type="button" class="btn btn-light border border-none rounded-pill" style="height: 30px; width: 50px;"><img src="images/icons8-search-36.png" alt="search-icon" width="20px;"></button>
             </form>
     </header>
 
     <main class="container mt-5">
         <!-- Section météo principale -->
         <div class="meteo-principal text-center w-100">
-            <img src="weather-icon.png" id="weather-icon" alt="weather">
+            <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" id="weather-icon" alt="weather">
             <h2 class="name-city">city-name</h2>
             <h1 class="temp">20 °C</h1>
         </div>
@@ -37,7 +38,7 @@
                 </div>
                 <div class="col-6 col-md-4 card-custom mt-5">
                     <img src="images/air-blow-icon-air-blow-simple-sign-air-blow-blowing-blustery-wind-windy-icon-air-icons-illustration-free-vector-removebg-preview.png"
-                        id="vent-icon" class="mb-2" alt="wind">
+                     id="vent-icon" class="mb-2" alt="wind">
                     <h5>Wind speed</h5>
                     <p class="wind">12 km/h</p>
                 </div>
@@ -50,34 +51,34 @@
     <div class="footer justify-content-around d-flex w-100 mt-5">
             <div class="ietm mt-5 d-flex flex-column align-items-center">
                 <p>Aujourd'hui</p>
-                <img src="weather-icon.png" class="forecast-icon" alt="today">
+                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" class="forecast-icon" alt="today">
                 <p>20 °C</p>
             </div>
             <div class="ietm mt-5 d-flex flex-column align-items-center">
                 <p>Demain</p>
-                <img src="weather-icon.png" class="forecast-icon" alt="tomorrow">
+                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" class="forecast-icon" alt="tomorrow">
                 <p>20 °C</p>
             </div>
             <div class="ietm mt-5 d-flex flex-column align-items-center">
                 <p>Jeudi</p>
-                <img src="weather-icon.png" class="forecast-icon" alt="thursday">
+                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" class="forecast-icon" alt="thursday">
                 <p>20 °C</p>
             </div>
             <div class="ietm mt-5 d-flex flex-column align-items-center">
                 <p>Jeudi</p>
-                <img src="weather-icon.png" class="forecast-icon" alt="thursday">
+                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" class="forecast-icon" alt="thursday">
                 <p>20 °C</p>
             </div>
             <div class="ietm mt-5 d-flex flex-column align-items-center">
                 <p>Jeudi</p>
-                <img src="weather-icon.png" class="forecast-icon" alt="thursday">
+                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" class="forecast-icon" alt="thursday">
                 <p>20 °C</p>
             </div>
             
         
     </div>
     
-
+      <script src="script.js"></script>
 </body>
 
 </html>
