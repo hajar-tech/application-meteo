@@ -7,20 +7,26 @@ body {
     text-align: center;
 }
 /* -------------header-----------*/
-
+form{
+    width: 40%;
+}
 .search{
-    width: 50%;
+    width: 100%;
     height: 30px;
+}
+#find-me{
+    width: 10%;
+    height: 20%;
 }
 
 /*----------main------------------*/
 #humidite-icon , #vent-icon{
-    width: 10%;
+    width: 40px;
 }
 .container{
     box-shadow: inset 5px 5px 5px 1000px rgba(226, 232, 235, 0.6);
     width: 70%;
-    height: 400px;
+    height: 500px;
     color: black;
 }
 .form-control{
@@ -38,6 +44,5 @@ body {
    flex-shrink: 0;
    color: black;
    margin: 0px 5px;
-   box-shadow: inset 5px 5px 5px 1000px rgba(226, 232, 235, 0.6);
+   box-shadow: inset 5px 5px 5px 1000px rgba(99, 99, 100, 0.6);
 }
- 

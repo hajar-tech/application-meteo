@@ -13,9 +13,9 @@
 
     <!-- Barre de recherche -->
     <header class=" d-flex justify-content-around">
-        <img class="weather-icon" src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" alt="">
-            <form class="d-flex  mt-5 bar-search w-50 gap-4">        
-                <input class="search p-3 border border-none rounded-pill" type="search" placeholder="enter city name....">
+        <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" class="d-none d-md-block" width="10%" height="auto" alt="">
+            <form class="d-flex justify-content-around mt-5 bar-search gap-4">        
+                <input class="search p-3 border border-none rounded-pill " type="search" placeholder="enter city name....">
                 <button type="button" class="btn btn-light border border-none rounded-pill" style="height: 30px; width: 50px;"><img src="images/icons8-search-36.png" alt="search-icon" width="20px;"></button>
             </form>
     </header>
@@ -23,7 +23,7 @@
     <main class="container mt-5">
         <!-- Section météo principale -->
         <div class="meteo-principal text-center w-100">
-            <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" id="weather-icon" alt="weather">
+            <img  class="weather-icon" src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="20%" height="auto" id="weather-icon" alt="weather">
             <h2 class="name-city">city-name</h2>
             <h1 class="temp">20 °C</h1>
         </div>
@@ -44,35 +44,38 @@
                 </div>
             </div>
         </div>
+        <button id="find-me"><img src="images/icons8-position-50 (1).png" alt="position-icon"></button><br />
+        <p id="status"></p>
+        <a id="map-link" target="_blank"></a>
     </main>
 
     <!-- Prévisions météo -->
 
     <div class="footer justify-content-around d-flex w-100 mt-5">
-            <div class="ietm mt-5 d-flex flex-column align-items-center">
-                <p>Aujourd'hui</p>
-                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" class="forecast-icon" alt="today">
-                <p>20 °C</p>
+            <div id="first-day" class="ietm mt-5 d-flex flex-column align-items-center">
+                <p id="first-day-name"  id="first-day-name" class="day-name">Aujourd'hui</p>
+                <img id="first-day-icon" src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="60px" height="auto" class="icon-first-day" alt="today">
+                <p id="first-day-temp" class="temp-day">20 °C</p>
             </div>
             <div class="ietm mt-5 d-flex flex-column align-items-center">
-                <p>Demain</p>
-                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" class="forecast-icon" alt="tomorrow">
-                <p>20 °C</p>
+                <p  id="second-day-name"  class="day-name">Demain</p>
+                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="60px" height="auto" class="icon-second-day" alt="tomorrow">
+                <p id="second-day-temp"  class="temp-day">20 °C</p>
             </div>
             <div class="ietm mt-5 d-flex flex-column align-items-center">
-                <p>Jeudi</p>
-                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" class="forecast-icon" alt="thursday">
-                <p>20 °C</p>
+                <p id="third-day-name" class="day-name">Jeudi</p>
+                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="60px" height="auto" class="icon-third-day" alt="thursday">
+                <p id="third-day-temp" class="temp-day">20 °C</p>
             </div>
             <div class="ietm mt-5 d-flex flex-column align-items-center">
-                <p>Jeudi</p>
-                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" class="forecast-icon" alt="thursday">
-                <p>20 °C</p>
+                <p id="fourth-day-name"  class="day-name">Jeudi</p>
+                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="60px" height="auto" class="icon-fourth-day" alt="thursday">
+                <p id="fourth-day-temp" class="temp-day">20 °C</p>
             </div>
             <div class="ietm mt-5 d-flex flex-column align-items-center">
-                <p>Jeudi</p>
-                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="10%" height="auto" class="forecast-icon" alt="thursday">
-                <p>20 °C</p>
+                <p id="fifth-day-name" class="day-name">Jeudi</p>
+                <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="60px" height="auto" class="icon-fifth-day" alt="thursday">
+                <p id="fifth-day-temp" class="temp-day">20 °C</p>
             </div>
             
         
