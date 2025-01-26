@@ -14,7 +14,7 @@
     <!-- Barre de recherche -->
     <header class=" d-flex justify-content-around">
         <img src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" class="d-none d-md-block" width="10%" height="auto" alt="">
-            <form class="d-flex justify-content-around mt-5 bar-search gap-4">        
+            <form class="d-flex justify-content-end mt-5 bar-search gap-4">        
                 <input class="search p-3 border border-none rounded-pill " type="search" placeholder="enter city name....">
                 <button type="button" class="btn btn-light border border-none rounded-pill" style="height: 30px; width: 50px;"><img src="images/icons8-search-36.png" alt="search-icon" width="20px;"></button>
             </form>
@@ -32,12 +32,12 @@
         <div class="meteo-detail">
             <div class="row justify-content-center mt-5">
                 <div class="col-6 col-md-4 card-custom mt-5">
-                    <img src="images/humidite-icon.png" id="humidite-icon" class="mb-2" alt="humidity">
+                    <img src="images/icons8-humidity-50.png" id="humidite-icon" class="mb-2" alt="humidity">
                     <h5>Humidity</h5>
                     <p class="humidity">30%</p>
                 </div>
                 <div class="col-6 col-md-4 card-custom mt-5">
-                    <img src="images/air-blow-icon-air-blow-simple-sign-air-blow-blowing-blustery-wind-windy-icon-air-icons-illustration-free-vector-removebg-preview.png"
+                    <img src="images/icons8-wind-30.png"
                      id="vent-icon" class="mb-2" alt="wind">
                     <h5>Wind speed</h5>
                     <p class="wind">12 km/h</p>
@@ -51,7 +51,7 @@
 
     <!-- Prévisions météo -->
 
-    <div class="footer justify-content-around d-flex w-100 mt-5">
+    <div class="footer justify-content-around d-flex w-100 mt-5" aria-label="Liste des contacts" tabindex="0">
             <div id="first-day" class="ietm mt-5 d-flex flex-column align-items-center">
                 <p id="first-day-name"  id="first-day-name" class="day-name">Aujourd'hui</p>
                 <img id="first-day-icon" src="images/06c4f70ec5931e2342e703e8a3f0a253-removebg-preview.png" width="60px" height="auto" class="icon-first-day" alt="today">
